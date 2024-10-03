@@ -13,5 +13,8 @@ name = st.text_area(st.session_state.text)
 if st.button('Submit'):
     st.write(f'Hello,!')
 
+if (name):
+    st.write(f'Hello its name !, {name}!')
+
 st.session_state.text = name
 
