@@ -15,7 +15,6 @@ if st.button('Submit'):
     st.write(f'Hello,!')
 
 if st.button('Rerun'):
-    st.session_state.text = ""
     st.rerun()
 
 if (name):
