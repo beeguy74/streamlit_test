@@ -10,7 +10,7 @@ if isinstance(st.session_state.text, str):
 
 test = ""
 
-name = st.text_area(test)
+name = st.text_area(st.session_state.text)
 
 if st.button('Submit'):
     st.write(f'Hello,!')
