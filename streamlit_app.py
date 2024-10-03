@@ -8,8 +8,10 @@ if 'text' not in st.session_state:
 if isinstance(st.session_state.text, str):
     st.title(f'{st.session_state.text}')
 
-st.text_input(f"{st.session_state.text}")
-st.button("Submit")
+name = st.text_input(st.session_state.text)
 
-st.session_state.text = ""
+if st.button('Submit'):
+    st.write(f'Hello, {name}!')
+
+st.session_state.text = name
 
