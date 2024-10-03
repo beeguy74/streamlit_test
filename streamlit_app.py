@@ -8,7 +8,7 @@ if 'text' not in st.session_state:
 if isinstance(st.session_state.text, str):
     st.title(f'{st.session_state.text}')
 
-name = st.text_area(st.session_state.text)
+name = st.text_area("")
 
 if st.button('Submit'):
     st.write(f'Hello,!')
