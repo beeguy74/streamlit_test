@@ -23,3 +23,5 @@ if (test):
 
 st.session_state.text = name
 
+test = ""
+
